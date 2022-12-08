@@ -61,17 +61,17 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
-let cats = ['mila', 'max'];
+let money= [100,200,300,400,500];
 
-function getLast( array ){
-array= cats[cats.length-1];
-return array;
-
-
+function getLast(array){
+  if (money.length === 0){
+  return undefined;
+  
 }
-let empty;
-console.log(' the last item in the array is', getLast());
-console.log('if its empty, it will say', empty);
+
+  return money[money.length-1];}
+//test function 6.
+console.log("last item in array is", getLast());
 
 
 
@@ -85,15 +85,18 @@ let cars= ['mustang', 'lambo', 'skyline', 'challenger'];
 function find( value, array ){
   for (let x=0; x < cars.length; x++) 
   if (cars[x]=== value){
-    return true;
+    return true; 
     
-  } else return false;
+  } return false;
   
   
 }
+// testing out 7.Function.
 console.log(find('mustang'));
 console.log(find('challenger'));
 console.log(find('camels'));
+console.log(find('skyline'));
+console.log(find('mason'));
 // ----------------------
 // Stretch Goals
 // ----------------------
