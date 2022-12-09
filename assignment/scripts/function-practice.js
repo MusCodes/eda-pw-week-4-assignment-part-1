@@ -64,14 +64,16 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 let money= [100,200,300,400,500];
 
 function getLast(array){
-  if (money.length === 0){
+  if (money.length === 0) {
   return undefined;
   
-}
+} else {
 
-  return money[money.length-1];}
+  return money[money.length-1];}}
+  
 //test function 6.
 console.log("last item in array is", getLast());
+
 
 
 
